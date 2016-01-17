@@ -45,9 +45,9 @@ $ nc localhost 9025
 250 beep
 helo
 250 
-mail from: <beep@localhost>
+mail from:<beep@localhost>
 250 
-rcpt to: <boop@localhost>
+rcpt to:<boop@localhost>
 250 
 data
 354 

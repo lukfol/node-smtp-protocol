@@ -84,8 +84,8 @@ test('server upgrade to TLS', function (t) {
                     ]);
                 }));
                 sec.write('ehlo beep\n');
-                sec.write('mail from: <beep@a.com>\n');
-                sec.write('rcpt to: <boop@b.com>\n');
+                sec.write('mail from:<beep@a.com>\n');
+                sec.write('rcpt to:<boop@b.com>\n');
                 sec.write('data\nbeep boop\n.\nquit\n')
             }
         ];

@@ -49,8 +49,8 @@ test('multi-line code parsing', function (t) {
         
         var chunks = chunky(new Buffer([
             'ehlo localhost',
-            'mail from: <beep@example.com>',
-            'rcpt to: <boop@example.com>',
+            'mail from:<beep@example.com>',
+            'rcpt to:<boop@example.com>',
             'data',
             'Greetings.',
             'I am a computer.',

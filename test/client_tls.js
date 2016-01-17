@@ -40,8 +40,8 @@ return t.end();
             var tserver = tls.createServer(opts, function (s) {
                 s.pipe(concat(function (body) {
                     t.deepEqual(body.toString('utf8').split(/\r?\n/), [
-                        'MAIL FROM: <alice@beep>',
-                        'RCPT TO: <bob@beep>',
+                        'MAIL FROM:<alice@beep>',
+                        'RCPT TO:<bob@beep>',
                         'DATA',
                         'beep boop!',
                         '',
